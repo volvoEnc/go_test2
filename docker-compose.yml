@@ -1,0 +1,11 @@
+version: "3.9"
+services:
+  mainapp:
+    image: golang
+    volumes:
+    - type: bind
+      source: .
+      target: .
+    ports:
+    - "7000-7020:7000-7020"
+    command: go run main.go
