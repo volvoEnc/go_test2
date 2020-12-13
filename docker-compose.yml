@@ -5,7 +5,7 @@ services:
     volumes:
     - type: bind
       source: ./
-      target: ./
+      target: /go/src/
     ports:
     - "7000-7020:7000-7020"
     command: go run main.go
