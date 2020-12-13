@@ -4,6 +4,6 @@ services:
     build:
       context: .
     ports:
-    - "7000-7020:7000-7020"
+    - "7020:7020"
     command: go run main.go
     container_name: golang_s1
