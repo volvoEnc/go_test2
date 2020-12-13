@@ -4,8 +4,9 @@ services:
     image: golang
     volumes:
     - type: bind
-      source: .
-      target: .
+      source: ./
+      target: ./
     ports:
     - "7000-7020:7000-7020"
     command: go run main.go
+    container_name: golang_s1
